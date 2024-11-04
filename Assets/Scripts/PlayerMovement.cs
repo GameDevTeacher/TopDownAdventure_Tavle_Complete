@@ -19,6 +19,6 @@ public class PlayerMovement : MonoBehaviour
         {
             m_Input.moveVector = m_Input.moveVector.normalized;
         }
-        m_RigidBody2D.velocity = m_Input.moveVector * moveSpeed;
+        m_RigidBody2D.linearVelocity = m_Input.moveVector * moveSpeed;
     }
 }
